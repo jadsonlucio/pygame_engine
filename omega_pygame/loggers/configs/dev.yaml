@@ -1,0 +1,30 @@
+version: 1
+formatters:
+  simple:
+    format: '[%(name)s][%(levelname)s][%(asctime)s] %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+loggers:
+  pygame_omega:
+    level: INFO
+    handlers: [console]
+    propagate: no
+  pygame_omega.core:
+    level: ERROR
+    handlers: [console]
+    propagate: no
+  pygame_omega.core.widget:
+    level: INFO
+    handlers: [console]
+    propagate: no
+  pygame_omega.core.events:
+    level: INFO
+    handlers: [console]
+    propagate: no
+root:
+  level: DEBUG
+  handlers: []
