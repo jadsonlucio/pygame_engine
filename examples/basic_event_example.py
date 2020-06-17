@@ -1,6 +1,6 @@
 import random
 from omega_pygame.core.base.window import Window
-from omega_pygame.core.engine import Sprite
+from omega_pygame.core.widgets.frame import Frame
 import logging
 
 
@@ -10,9 +10,9 @@ def mouse_out(block, event):
 
 def grid(window):
     for cont in range(100):
-        x, y = (cont % 10) * 50, (cont // 10) * 50
-        block = Sprite(f"{x}_{y}", window, x, y, 50, 50)
-        block.fill((random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
+        x, y = cont % 10, cont//10
+        background_color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        block = Frame(window, x*0.1, y*0.1, 0.1, 0.1, background_color)
         block.events.bind("mouse_over", mouse_out)
 
 

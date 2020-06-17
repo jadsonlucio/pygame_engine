@@ -3,10 +3,9 @@ from omega_pygame.core.pygame_api.image import load_image
 
 
 class Sprite(CanvasEntity):
-    def __init__(self, surface, width, height, name=None):
-        super().__init__(None, 0, 0, width, height)
+    def __init__(self, surface, posx, posy, width, height, name=None):
+        super().__init__(surface, posx, posy, width, height)
         self.name = name
-        self.blit(surface, width, height)
 
     def __str__(self):
         return self.name

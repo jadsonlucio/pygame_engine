@@ -42,11 +42,9 @@ class CanvasEntity(Canvas):
         self.check_size()
 
     def _resize(self, width, height):
-        print(width, height)
         super()._resize(width, height)
 
     def window_resize(self, event):
-        print(event)
         return event
 
     def mouse_over(self, event):

@@ -4,7 +4,6 @@ from omega_pygame.core.base.entity_base import CanvasEntity
 
 
 def click(widget, event):
-    print(event)
     widget.fill((255, 0, 0))
 
 

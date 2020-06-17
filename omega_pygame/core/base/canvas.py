@@ -18,3 +18,4 @@ class Canvas(pygame.Surface):
 
     def _resize(self, width, height):
         super(Canvas, self).__init__((width, height))
+
