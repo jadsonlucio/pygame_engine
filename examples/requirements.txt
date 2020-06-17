@@ -1,0 +1,4 @@
+-e git+https://github.com/jadsonlucio/pygame_engine.git@d255bd849dd973aadabc60a01fb8aab874f03983#egg=myproject
+numpy==1.18.5
+pygame==1.9.6
+PyYAML==5.3.1
