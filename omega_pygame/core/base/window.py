@@ -8,6 +8,7 @@ class Window(CanvasEntity):
         self._running = False
         self.title = title
         self._display_surf = pygame.display.set_mode((width, height), mode)
+        pygame.display.set_caption(self.title)
 
         super().__init__(self._display_surf, posX, posY, width, height)
 

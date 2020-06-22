@@ -1,0 +1,1 @@
+from .entity_base.canvas_entity import Canvas
